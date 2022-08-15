@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+
+  redis:
+    container_name: redis-db
+    image: redis:7.0-alpine3.15
+    restart: on-failure
+    ports:
+      - 6379:6379
